@@ -1,0 +1,1802 @@
+(0.000000) CudaRuntime.cpp:3813: Adding external function 'malloc'
+(0.000000) CudaRuntime.cpp:3813: Adding external function 'free'
+(0.000000) CudaRuntime.cpp:3813: Adding external function 'vprintf'
+(0.000000) CudaRuntime.cpp:3813: Adding external function 'cudaGetParameterBuffer'
+(0.000039) CudaRuntime.cpp:595:  Loading module (fatbin) - hotspot.cu
+(0.000047) CudaRuntime.cpp:738:  Registered kernel - _Z14calculate_tempiPfS_S_iiiiffffff in module 'hotspot.cu'
+pyramidHeight: 2
+gridSize: [100, 100]
+border:[2, 2]
+blockGrid:[9, 9]
+targetBlock:[12, 12]
+(0.004474) CudaRuntime.cpp:276:  Creating devices.
+(0.004561) CudaRuntime.cpp:288:   - Added 1 emulator devices.
+(0.005171) CudaRuntime.cpp:446:  Creating new context for thread 0x64e5e0
+(0.005209) CudaRuntime.cpp:787:  cudaMalloc( *devPtr = 0x650900, size = 40000)
+(0.005221) CudaRuntime.cpp:787:  cudaMalloc( *devPtr = 0x65a900, size = 40000)
+(0.005227) CudaRuntime.cpp:1131: cudaMemcpy(0x650900, 0x630770, 40000)
+(0.005231) CudaRuntime.cpp:251:    _memcpy(0x650900, 0x630770, 40000 bytes) h-to-d
+(0.005265) CudaRuntime.cpp:787:  cudaMalloc( *devPtr = 0x664600, size = 40000)
+(0.005268) CudaRuntime.cpp:1131: cudaMemcpy(0x664600, 0x63a3c0, 40000)
+(0.005271) CudaRuntime.cpp:251:    _memcpy(0x664600, 0x63a3c0, 40000 bytes) h-to-d
+(0.005291) CudaRuntime.cpp:2609: cudaConfigureCall()
+(0.005296) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(0.005300) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(0.005304) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(0.005307) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(0.005310) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(0.005314) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(0.005316) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(0.005319) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(0.005322) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(0.005325) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(0.005328) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(0.005331) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(0.005333) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(0.005336) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(0.008919) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(0.008928) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(0.008933) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(0.008937) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(0.008941) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(0.008945) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(0.008948) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(0.008951) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(0.008955) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(0.008958) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(0.008962) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(0.008965) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(0.008969) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(0.008972) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(0.009047) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(0.009085) CudaRuntime.cpp:2706:  launch completed successfully
+all enabled
+(0.011527) X86TraceGenerator.cpp:776:  New kernel launched
+(0.011536) X86TraceGenerator.cpp:777:  compute version:2.0
+(0.011539) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(0.011544) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(0.011546) X86TraceGenerator.cpp:780:  number of warps per block:8
+(0.011549) X86TraceGenerator.cpp:781:  number of total warps:648
+(0.011551) X86TraceGenerator.cpp:782:  # threads per block : 256
+(0.011554) X86TraceGenerator.cpp:783:  number of register per thread:30
+(0.011557) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(0.011560) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(0.014559) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_0/ (status 0)
+
+(0.014614) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(1.573765) CudaRuntime.cpp:2609: cudaConfigureCall()
+(1.573793) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(1.573797) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(1.573800) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(1.573802) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(1.573805) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(1.573808) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(1.573810) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(1.573813) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(1.573816) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(1.573818) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(1.573821) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(1.573823) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(1.573826) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(1.573828) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(1.573860) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(1.573866) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(1.573869) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(1.573874) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(1.573877) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(1.573881) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(1.573884) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(1.573888) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(1.573891) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(1.573895) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(1.573898) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(1.573901) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(1.573905) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(1.573908) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(1.573915) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(1.574044) CudaRuntime.cpp:2706:  launch completed successfully
+(1.575986) X86TraceGenerator.cpp:776:  New kernel launched
+(1.575996) X86TraceGenerator.cpp:777:  compute version:2.0
+(1.575999) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(1.576002) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(1.576005) X86TraceGenerator.cpp:780:  number of warps per block:8
+(1.576007) X86TraceGenerator.cpp:781:  number of total warps:648
+(1.576010) X86TraceGenerator.cpp:782:  # threads per block : 256
+(1.576012) X86TraceGenerator.cpp:783:  number of register per thread:30
+(1.576015) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(1.576018) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(1.578685) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_1/ (status 0)
+
+(1.578704) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(3.080686) CudaRuntime.cpp:2609: cudaConfigureCall()
+(3.080710) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(3.080714) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(3.080716) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(3.080719) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(3.080721) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(3.080724) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(3.080726) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(3.080729) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(3.080731) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(3.080734) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(3.080736) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(3.080738) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(3.080741) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(3.080743) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(3.080770) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(3.080776) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(3.080780) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(3.080784) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(3.080787) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(3.080791) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(3.080794) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(3.080797) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(3.080801) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(3.080804) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(3.080807) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(3.080811) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(3.080814) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(3.080817) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(3.080821) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(3.080873) CudaRuntime.cpp:2706:  launch completed successfully
+(3.082880) X86TraceGenerator.cpp:776:  New kernel launched
+(3.082894) X86TraceGenerator.cpp:777:  compute version:2.0
+(3.082971) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(3.082977) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(3.082980) X86TraceGenerator.cpp:780:  number of warps per block:8
+(3.082982) X86TraceGenerator.cpp:781:  number of total warps:648
+(3.082985) X86TraceGenerator.cpp:782:  # threads per block : 256
+(3.082988) X86TraceGenerator.cpp:783:  number of register per thread:30
+(3.082990) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(3.082994) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(3.087124) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_2/ (status 0)
+
+(3.087196) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(4.578154) CudaRuntime.cpp:2609: cudaConfigureCall()
+(4.578170) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(4.578173) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(4.578176) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(4.578179) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(4.578182) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(4.578184) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(4.578187) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(4.578189) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(4.578192) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(4.578194) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(4.578197) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(4.578199) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(4.578202) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(4.578204) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(4.578224) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(4.578228) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(4.578233) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(4.578237) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(4.578240) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(4.578244) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(4.578247) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(4.578251) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(4.578254) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(4.578258) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(4.578261) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(4.578264) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(4.578268) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(4.578271) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(4.578277) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(4.578320) CudaRuntime.cpp:2706:  launch completed successfully
+(4.580026) X86TraceGenerator.cpp:776:  New kernel launched
+(4.580039) X86TraceGenerator.cpp:777:  compute version:2.0
+(4.580042) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(4.580045) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(4.580048) X86TraceGenerator.cpp:780:  number of warps per block:8
+(4.580100) X86TraceGenerator.cpp:781:  number of total warps:648
+(4.580104) X86TraceGenerator.cpp:782:  # threads per block : 256
+(4.580107) X86TraceGenerator.cpp:783:  number of register per thread:30
+(4.580111) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(4.580114) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(4.582843) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_3/ (status 0)
+
+(4.582866) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(6.897121) CudaRuntime.cpp:2609: cudaConfigureCall()
+(6.897146) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(6.897151) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(6.897155) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(6.897159) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(6.897163) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(6.897167) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(6.897171) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(6.897175) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(6.897179) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(6.897183) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(6.897187) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(6.897191) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(6.897195) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(6.897199) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(6.897234) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(6.897243) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(6.897249) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(6.897255) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(6.897261) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(6.897266) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(6.897272) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(6.897277) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(6.897283) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(6.897288) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(6.897294) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(6.897299) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(6.897305) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(6.897310) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(6.897315) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(6.897390) CudaRuntime.cpp:2706:  launch completed successfully
+(6.902508) X86TraceGenerator.cpp:776:  New kernel launched
+(6.902529) X86TraceGenerator.cpp:777:  compute version:2.0
+(6.902534) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(6.902540) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(6.902545) X86TraceGenerator.cpp:780:  number of warps per block:8
+(6.902549) X86TraceGenerator.cpp:781:  number of total warps:648
+(6.902553) X86TraceGenerator.cpp:782:  # threads per block : 256
+(6.902557) X86TraceGenerator.cpp:783:  number of register per thread:30
+(6.902661) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(6.902671) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(6.906624) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_4/ (status 0)
+
+(6.906651) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(9.522721) CudaRuntime.cpp:2609: cudaConfigureCall()
+(9.522738) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(9.522743) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(9.522746) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(9.522749) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(9.522753) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(9.522756) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(9.522759) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(9.522763) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(9.522766) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(9.522769) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(9.522772) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(9.522776) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(9.522779) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(9.522782) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(9.522802) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(9.522809) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(9.522814) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(9.522819) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(9.522823) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(9.522828) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(9.522832) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(9.522836) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(9.522841) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(9.522845) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(9.522850) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(9.522854) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(9.522858) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(9.522862) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(9.522868) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(9.522905) CudaRuntime.cpp:2706:  launch completed successfully
+(9.526016) X86TraceGenerator.cpp:776:  New kernel launched
+(9.526029) X86TraceGenerator.cpp:777:  compute version:2.0
+(9.526033) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(9.526037) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(9.526041) X86TraceGenerator.cpp:780:  number of warps per block:8
+(9.526044) X86TraceGenerator.cpp:781:  number of total warps:648
+(9.526047) X86TraceGenerator.cpp:782:  # threads per block : 256
+(9.526050) X86TraceGenerator.cpp:783:  number of register per thread:30
+(9.526053) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(9.526058) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(9.530268) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_5/ (status 0)
+
+(9.530377) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(12.093206) CudaRuntime.cpp:2609: cudaConfigureCall()
+(12.093313) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(12.093352) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(12.093385) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(12.093415) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(12.093445) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(12.093475) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(12.093505) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(12.093534) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(12.093563) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(12.093592) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(12.093621) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(12.093652) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(12.093681) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(12.093711) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(12.093883) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(12.093934) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(12.093972) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(12.094008) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(12.094043) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(12.094076) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(12.094109) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(12.094142) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(12.094176) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(12.094209) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(12.094243) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(12.094277) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(12.094311) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(12.094344) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(12.094380) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(12.094849) CudaRuntime.cpp:2706:  launch completed successfully
+(12.104249) X86TraceGenerator.cpp:776:  New kernel launched
+(12.104283) X86TraceGenerator.cpp:777:  compute version:2.0
+(12.104290) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(12.104298) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(12.104304) X86TraceGenerator.cpp:780:  number of warps per block:8
+(12.104309) X86TraceGenerator.cpp:781:  number of total warps:648
+(12.104314) X86TraceGenerator.cpp:782:  # threads per block : 256
+(12.104320) X86TraceGenerator.cpp:783:  number of register per thread:30
+(12.104325) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(12.104332) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(12.111579) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_6/ (status 0)
+
+(12.111719) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(15.158164) CudaRuntime.cpp:2609: cudaConfigureCall()
+(15.158186) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(15.158193) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(15.158198) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(15.158203) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(15.158208) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(15.158213) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(15.158217) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(15.158222) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(15.158227) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(15.158231) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(15.158237) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(15.158241) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(15.158246) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(15.158251) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(15.158282) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(15.158291) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(15.158298) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(15.158305) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(15.158312) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(15.158319) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(15.158325) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(15.158332) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(15.158338) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(15.158345) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(15.158351) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(15.158357) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(15.158363) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(15.158370) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(15.158379) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(15.158431) CudaRuntime.cpp:2706:  launch completed successfully
+(15.164195) X86TraceGenerator.cpp:776:  New kernel launched
+(15.164226) X86TraceGenerator.cpp:777:  compute version:2.0
+(15.164232) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(15.164240) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(15.164246) X86TraceGenerator.cpp:780:  number of warps per block:8
+(15.164251) X86TraceGenerator.cpp:781:  number of total warps:648
+(15.164256) X86TraceGenerator.cpp:782:  # threads per block : 256
+(15.164262) X86TraceGenerator.cpp:783:  number of register per thread:30
+(15.164267) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(15.164275) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(15.169731) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_7/ (status 0)
+
+(15.169772) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(17.707809) CudaRuntime.cpp:2609: cudaConfigureCall()
+(17.707830) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(17.707836) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(17.707926) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(17.707932) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(17.707937) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(17.707941) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(17.707946) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(17.707950) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(17.707954) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(17.707958) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(17.707962) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(17.707967) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(17.707971) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(17.707975) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(17.708004) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(17.708011) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(17.708018) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(17.708025) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(17.708030) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(17.708053) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(17.708062) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(17.708069) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(17.708075) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(17.708081) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(17.708087) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(17.708092) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(17.708098) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(17.708104) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(17.708110) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(17.708159) CudaRuntime.cpp:2706:  launch completed successfully
+(17.710416) X86TraceGenerator.cpp:776:  New kernel launched
+(17.710432) X86TraceGenerator.cpp:777:  compute version:2.0
+(17.710437) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(17.710442) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(17.710446) X86TraceGenerator.cpp:780:  number of warps per block:8
+(17.710451) X86TraceGenerator.cpp:781:  number of total warps:648
+(17.710455) X86TraceGenerator.cpp:782:  # threads per block : 256
+(17.710459) X86TraceGenerator.cpp:783:  number of register per thread:30
+(17.710464) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(17.710469) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(17.713154) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_8/ (status 0)
+
+(17.713179) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(20.316489) CudaRuntime.cpp:2609: cudaConfigureCall()
+(20.316514) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(20.316520) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(20.316525) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(20.316626) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(20.316633) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(20.316638) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(20.316643) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(20.316648) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(20.316653) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(20.316657) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(20.316662) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(20.316666) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(20.316671) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(20.316675) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(20.316707) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(20.316715) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(20.316722) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(20.316729) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(20.316735) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(20.316741) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(20.316747) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(20.316754) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(20.316760) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(20.316766) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(20.316772) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(20.316778) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(20.316784) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(20.316790) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(20.316798) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(20.316851) CudaRuntime.cpp:2706:  launch completed successfully
+(20.320067) X86TraceGenerator.cpp:776:  New kernel launched
+(20.320085) X86TraceGenerator.cpp:777:  compute version:2.0
+(20.320090) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(20.320096) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(20.320101) X86TraceGenerator.cpp:780:  number of warps per block:8
+(20.320106) X86TraceGenerator.cpp:781:  number of total warps:648
+(20.320110) X86TraceGenerator.cpp:782:  # threads per block : 256
+(20.320115) X86TraceGenerator.cpp:783:  number of register per thread:30
+(20.320119) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(20.320125) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(20.323859) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_9/ (status 0)
+
+(20.323895) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(23.659814) CudaRuntime.cpp:2609: cudaConfigureCall()
+(23.659925) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(23.659962) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(23.659992) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(23.660022) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(23.660052) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(23.660581) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(23.660635) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(23.660671) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(23.660703) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(23.660735) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(23.660767) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(23.661059) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(23.661359) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(23.661388) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(23.661463) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(23.661476) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(23.661486) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(23.661498) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(23.661505) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(23.661515) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(23.661524) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(23.661533) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(23.661543) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(23.661551) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(23.661558) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(23.661564) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(23.661570) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(23.661576) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(23.661582) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(23.661699) CudaRuntime.cpp:2706:  launch completed successfully
+(23.666801) X86TraceGenerator.cpp:776:  New kernel launched
+(23.666833) X86TraceGenerator.cpp:777:  compute version:2.0
+(23.666842) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(23.666852) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(23.666861) X86TraceGenerator.cpp:780:  number of warps per block:8
+(23.666870) X86TraceGenerator.cpp:781:  number of total warps:648
+(23.666878) X86TraceGenerator.cpp:782:  # threads per block : 256
+(23.666886) X86TraceGenerator.cpp:783:  number of register per thread:30
+(23.666894) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(23.666904) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(23.672168) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_10/ (status 0)
+
+(23.672228) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(27.072657) CudaRuntime.cpp:2609: cudaConfigureCall()
+(27.072695) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(27.072701) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(27.072706) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(27.072711) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(27.072716) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(27.072721) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(27.072725) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(27.072819) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(27.072825) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(27.072830) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(27.072835) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(27.072840) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(27.072844) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(27.072849) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(27.072884) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(27.072893) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(27.072900) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(27.072907) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(27.072913) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(27.072919) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(27.072925) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(27.072931) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(27.072937) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(27.072943) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(27.072949) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(27.072955) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(27.072961) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(27.072967) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(27.072976) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(27.073034) CudaRuntime.cpp:2706:  launch completed successfully
+(27.075650) X86TraceGenerator.cpp:776:  New kernel launched
+(27.075669) X86TraceGenerator.cpp:777:  compute version:2.0
+(27.075675) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(27.075680) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(27.075686) X86TraceGenerator.cpp:780:  number of warps per block:8
+(27.075691) X86TraceGenerator.cpp:781:  number of total warps:648
+(27.075695) X86TraceGenerator.cpp:782:  # threads per block : 256
+(27.075701) X86TraceGenerator.cpp:783:  number of register per thread:30
+(27.075705) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(27.075711) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(27.081604) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_11/ (status 0)
+
+(27.081645) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(29.789788) CudaRuntime.cpp:2609: cudaConfigureCall()
+(29.789813) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(29.789818) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(29.789822) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(29.789826) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(29.789830) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(29.789834) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(29.789838) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(29.789841) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(29.789845) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(29.789924) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(29.789929) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(29.789932) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(29.789936) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(29.789940) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(29.789968) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(29.789976) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(29.789982) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(29.789987) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(29.789992) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(29.789997) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(29.790002) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(29.790008) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(29.790012) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(29.790018) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(29.790023) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(29.790028) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(29.790033) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(29.790037) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(29.790042) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(29.790088) CudaRuntime.cpp:2706:  launch completed successfully
+(29.791965) X86TraceGenerator.cpp:776:  New kernel launched
+(29.791977) X86TraceGenerator.cpp:777:  compute version:2.0
+(29.791981) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(29.791986) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(29.791990) X86TraceGenerator.cpp:780:  number of warps per block:8
+(29.791993) X86TraceGenerator.cpp:781:  number of total warps:648
+(29.791997) X86TraceGenerator.cpp:782:  # threads per block : 256
+(29.792001) X86TraceGenerator.cpp:783:  number of register per thread:30
+(29.792004) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(29.792008) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(29.794751) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_12/ (status 0)
+
+(29.794775) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(33.121518) CudaRuntime.cpp:2609: cudaConfigureCall()
+(33.121559) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(33.121572) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(33.121584) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(33.121596) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(33.121606) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(33.121619) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(33.121630) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(33.121641) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(33.121653) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(33.121664) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(33.121676) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(33.121880) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(33.121894) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(33.121907) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(33.121974) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(33.121994) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(33.122012) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(33.122030) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(33.122046) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(33.122061) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(33.122077) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(33.122093) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(33.122108) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(33.122124) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(33.122140) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(33.122155) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(33.122170) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(33.122186) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(33.122205) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(33.122299) CudaRuntime.cpp:2706:  launch completed successfully
+(33.132084) X86TraceGenerator.cpp:776:  New kernel launched
+(33.132128) X86TraceGenerator.cpp:777:  compute version:2.0
+(33.132138) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(33.132148) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(33.132157) X86TraceGenerator.cpp:780:  number of warps per block:8
+(33.132166) X86TraceGenerator.cpp:781:  number of total warps:648
+(33.132174) X86TraceGenerator.cpp:782:  # threads per block : 256
+(33.132183) X86TraceGenerator.cpp:783:  number of register per thread:30
+(33.132190) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(33.132202) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(33.137840) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_13/ (status 0)
+
+(33.137909) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(36.861965) CudaRuntime.cpp:2609: cudaConfigureCall()
+(36.862065) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(36.862106) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(36.862139) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(36.862170) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(36.862201) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(36.862231) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(36.862262) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(36.862292) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(36.862321) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(36.862350) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(36.862379) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(36.862409) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(36.862440) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(36.862877) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(36.863086) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(36.863144) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(36.863185) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(36.863225) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(36.863262) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(36.863300) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(36.863338) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(36.863373) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(36.863408) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(36.863443) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(36.863478) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(36.863750) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(36.863812) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(36.863854) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(36.863897) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(36.864277) CudaRuntime.cpp:2706:  launch completed successfully
+(36.868897) X86TraceGenerator.cpp:776:  New kernel launched
+(36.868932) X86TraceGenerator.cpp:777:  compute version:2.0
+(36.868943) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(36.868955) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(36.868966) X86TraceGenerator.cpp:780:  number of warps per block:8
+(36.868976) X86TraceGenerator.cpp:781:  number of total warps:648
+(36.868986) X86TraceGenerator.cpp:782:  # threads per block : 256
+(36.868996) X86TraceGenerator.cpp:783:  number of register per thread:30
+(36.869006) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(36.869018) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(36.873776) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_14/ (status 0)
+
+(36.873830) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(39.479254) CudaRuntime.cpp:2609: cudaConfigureCall()
+(39.479276) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(39.479281) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(39.479286) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(39.479290) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(39.479293) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(39.479297) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(39.479301) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(39.479305) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(39.479308) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(39.479312) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(39.479316) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(39.479320) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(39.479323) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(39.479327) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(39.479355) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(39.479435) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(39.479442) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(39.479448) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(39.479453) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(39.479459) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(39.479464) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(39.479469) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(39.479474) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(39.479479) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(39.479484) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(39.479489) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(39.479494) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(39.479499) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(39.479507) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(39.479549) CudaRuntime.cpp:2706:  launch completed successfully
+(39.483617) X86TraceGenerator.cpp:776:  New kernel launched
+(39.483636) X86TraceGenerator.cpp:777:  compute version:2.0
+(39.483641) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(39.483646) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(39.483650) X86TraceGenerator.cpp:780:  number of warps per block:8
+(39.483654) X86TraceGenerator.cpp:781:  number of total warps:648
+(39.483658) X86TraceGenerator.cpp:782:  # threads per block : 256
+(39.483662) X86TraceGenerator.cpp:783:  number of register per thread:30
+(39.483666) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(39.483671) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(39.486205) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_15/ (status 0)
+
+(39.486232) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(41.755158) CudaRuntime.cpp:2609: cudaConfigureCall()
+(41.755180) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(41.755185) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(41.755189) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(41.755193) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(41.755198) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(41.755202) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(41.755206) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(41.755210) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(41.755213) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(41.755218) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(41.755222) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(41.755226) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(41.755229) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(41.755234) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(41.755263) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(41.755270) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(41.755359) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(41.755367) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(41.755373) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(41.755378) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(41.755383) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(41.755389) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(41.755394) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(41.755399) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(41.755404) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(41.755410) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(41.755415) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(41.755420) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(41.755426) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(41.755473) CudaRuntime.cpp:2706:  launch completed successfully
+(41.762172) X86TraceGenerator.cpp:776:  New kernel launched
+(41.762192) X86TraceGenerator.cpp:777:  compute version:2.0
+(41.762197) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(41.762204) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(41.762208) X86TraceGenerator.cpp:780:  number of warps per block:8
+(41.762213) X86TraceGenerator.cpp:781:  number of total warps:648
+(41.762217) X86TraceGenerator.cpp:782:  # threads per block : 256
+(41.762221) X86TraceGenerator.cpp:783:  number of register per thread:30
+(41.762225) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(41.762231) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(41.765285) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_16/ (status 0)
+
+(41.765313) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(44.177463) CudaRuntime.cpp:2609: cudaConfigureCall()
+(44.177480) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(44.177484) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(44.177488) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(44.177491) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(44.177495) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(44.177498) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(44.177501) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(44.177505) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(44.177508) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(44.177511) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(44.177515) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(44.177518) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(44.177522) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(44.177525) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(44.177546) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(44.177552) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(44.177558) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(44.177625) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(44.177631) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(44.177636) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(44.177640) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(44.177645) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(44.177649) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(44.177654) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(44.177658) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(44.177662) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(44.177667) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(44.177671) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(44.177679) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(44.177765) CudaRuntime.cpp:2706:  launch completed successfully
+(44.179703) X86TraceGenerator.cpp:776:  New kernel launched
+(44.179716) X86TraceGenerator.cpp:777:  compute version:2.0
+(44.179720) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(44.179724) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(44.179728) X86TraceGenerator.cpp:780:  number of warps per block:8
+(44.179731) X86TraceGenerator.cpp:781:  number of total warps:648
+(44.179735) X86TraceGenerator.cpp:782:  # threads per block : 256
+(44.179738) X86TraceGenerator.cpp:783:  number of register per thread:30
+(44.179742) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(44.179746) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(44.182491) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_17/ (status 0)
+
+(44.182514) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(46.355915) CudaRuntime.cpp:2609: cudaConfigureCall()
+(46.356120) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(46.356143) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(46.356147) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(46.356151) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(46.356154) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(46.356157) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(46.356161) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(46.356164) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(46.356167) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(46.356170) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(46.356174) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(46.356177) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(46.356180) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(46.356183) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(46.356213) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(46.356219) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(46.356224) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(46.356229) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(46.356286) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(46.356292) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(46.356297) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(46.356301) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(46.356306) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(46.356310) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(46.356314) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(46.356319) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(46.356323) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(46.356327) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(46.356332) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(46.356370) CudaRuntime.cpp:2706:  launch completed successfully
+(46.358181) X86TraceGenerator.cpp:776:  New kernel launched
+(46.358191) X86TraceGenerator.cpp:777:  compute version:2.0
+(46.358195) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(46.358199) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(46.358202) X86TraceGenerator.cpp:780:  number of warps per block:8
+(46.358206) X86TraceGenerator.cpp:781:  number of total warps:648
+(46.358209) X86TraceGenerator.cpp:782:  # threads per block : 256
+(46.358212) X86TraceGenerator.cpp:783:  number of register per thread:30
+(46.358216) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(46.358220) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(46.360400) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_18/ (status 0)
+
+(46.360423) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(47.960313) CudaRuntime.cpp:2609: cudaConfigureCall()
+(47.960341) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(47.960346) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(47.960350) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(47.960353) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(47.960357) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(47.960360) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(47.960363) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(47.960427) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(47.960434) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(47.960438) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(47.960442) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(47.960445) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(47.960449) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(47.960452) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(47.960497) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(47.960505) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(47.960510) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(47.960516) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(47.960520) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(47.960636) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(47.960643) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(47.960648) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(47.960652) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(47.960657) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(47.960661) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(47.960665) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(47.960670) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(47.960674) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(47.960682) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(47.960728) CudaRuntime.cpp:2706:  launch completed successfully
+(47.963708) X86TraceGenerator.cpp:776:  New kernel launched
+(47.963735) X86TraceGenerator.cpp:777:  compute version:2.0
+(47.963739) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(47.963745) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(47.963749) X86TraceGenerator.cpp:780:  number of warps per block:8
+(47.963752) X86TraceGenerator.cpp:781:  number of total warps:648
+(47.963755) X86TraceGenerator.cpp:782:  # threads per block : 256
+(47.963758) X86TraceGenerator.cpp:783:  number of register per thread:30
+(47.963762) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(47.963768) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(47.966702) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_19/ (status 0)
+
+(47.966725) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(50.161476) CudaRuntime.cpp:2609: cudaConfigureCall()
+(50.161575) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(50.161614) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(50.161647) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(50.161678) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(50.161710) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(50.161741) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(50.161772) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(50.161804) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(50.161834) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(50.161864) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(50.161896) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(50.161926) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(50.161958) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(50.161988) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(50.162170) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(50.162236) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(50.162279) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(50.162318) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(50.162355) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(50.162391) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(50.162845) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(50.162908) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(50.162950) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(50.162987) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(50.163024) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(50.163060) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(50.163097) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(50.163133) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(50.163177) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(50.163701) CudaRuntime.cpp:2706:  launch completed successfully
+(50.166382) X86TraceGenerator.cpp:776:  New kernel launched
+(50.166402) X86TraceGenerator.cpp:777:  compute version:2.0
+(50.166407) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(50.166413) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(50.166417) X86TraceGenerator.cpp:780:  number of warps per block:8
+(50.166421) X86TraceGenerator.cpp:781:  number of total warps:648
+(50.166426) X86TraceGenerator.cpp:782:  # threads per block : 256
+(50.166430) X86TraceGenerator.cpp:783:  number of register per thread:30
+(50.166434) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(50.166440) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(50.171482) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_20/ (status 0)
+
+(50.171532) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(52.042285) CudaRuntime.cpp:2609: cudaConfigureCall()
+(52.042349) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(52.042364) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(52.042378) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(52.042391) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(52.042403) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(52.042416) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(52.042429) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(52.042442) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(52.042455) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(52.042468) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(52.042481) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(52.042494) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(52.042506) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(52.042519) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(52.042587) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(52.042609) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(52.042627) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(52.042643) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(52.042658) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(52.042783) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(52.042824) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(52.043131) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(52.043159) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(52.043179) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(52.043196) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(52.043214) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(52.043231) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(52.043327) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(52.043356) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(52.043426) CudaRuntime.cpp:2706:  launch completed successfully
+(52.045953) X86TraceGenerator.cpp:776:  New kernel launched
+(52.045971) X86TraceGenerator.cpp:777:  compute version:2.0
+(52.045975) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(52.045980) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(52.045984) X86TraceGenerator.cpp:780:  number of warps per block:8
+(52.045987) X86TraceGenerator.cpp:781:  number of total warps:648
+(52.045990) X86TraceGenerator.cpp:782:  # threads per block : 256
+(52.045994) X86TraceGenerator.cpp:783:  number of register per thread:30
+(52.045996) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(52.046001) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(52.050633) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_21/ (status 0)
+
+(52.050661) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(53.880470) CudaRuntime.cpp:2609: cudaConfigureCall()
+(53.880509) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(53.880519) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(53.880527) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(53.880535) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(53.880543) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(53.880550) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(53.880558) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(53.880566) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(53.880574) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(53.880582) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(53.880590) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(53.880598) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(53.880606) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(53.880614) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(53.880666) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(53.880682) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(53.880693) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(53.880703) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(53.880713) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(53.880723) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(53.880732) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(53.880742) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(53.880904) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(53.880921) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(53.880933) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(53.880943) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(53.880954) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(53.880964) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(53.880977) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(53.881116) CudaRuntime.cpp:2706:  launch completed successfully
+(53.883096) X86TraceGenerator.cpp:776:  New kernel launched
+(53.883123) X86TraceGenerator.cpp:777:  compute version:2.0
+(53.883127) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(53.883132) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(53.883135) X86TraceGenerator.cpp:780:  number of warps per block:8
+(53.883138) X86TraceGenerator.cpp:781:  number of total warps:648
+(53.883141) X86TraceGenerator.cpp:782:  # threads per block : 256
+(53.883143) X86TraceGenerator.cpp:783:  number of register per thread:30
+(53.883146) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(53.883150) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(53.885727) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_22/ (status 0)
+
+(53.885748) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(55.564446) CudaRuntime.cpp:2609: cudaConfigureCall()
+(55.564467) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(55.564471) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(55.564474) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(55.564477) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(55.564480) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(55.564483) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(55.564486) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(55.564488) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(55.564491) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(55.564494) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(55.564497) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(55.564499) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(55.564502) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(55.564505) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(55.564547) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(55.564552) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(55.564557) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(55.564561) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(55.564565) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(55.564569) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(55.564572) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(55.564576) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(55.564580) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(55.564717) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(55.564722) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(55.564726) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(55.564730) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(55.564734) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(55.564742) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(55.564808) CudaRuntime.cpp:2706:  launch completed successfully
+(55.568149) X86TraceGenerator.cpp:776:  New kernel launched
+(55.568178) X86TraceGenerator.cpp:777:  compute version:2.0
+(55.568182) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(55.568187) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(55.568190) X86TraceGenerator.cpp:780:  number of warps per block:8
+(55.568193) X86TraceGenerator.cpp:781:  number of total warps:648
+(55.568196) X86TraceGenerator.cpp:782:  # threads per block : 256
+(55.568199) X86TraceGenerator.cpp:783:  number of register per thread:30
+(55.568202) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(55.568206) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(55.572623) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_23/ (status 0)
+
+(55.572651) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(57.253613) CudaRuntime.cpp:2609: cudaConfigureCall()
+(57.253632) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(57.253636) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(57.253639) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(57.253642) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(57.253645) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(57.253648) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(57.253651) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(57.253654) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(57.253656) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(57.253659) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(57.253662) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(57.253665) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(57.253668) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(57.253671) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(57.253693) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(57.253699) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(57.253703) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(57.253707) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(57.253711) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(57.253715) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(57.253719) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(57.253723) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(57.253727) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(57.253730) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(57.253734) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(57.253800) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(57.253804) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(57.253808) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(57.253813) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(57.253849) CudaRuntime.cpp:2706:  launch completed successfully
+(57.255710) X86TraceGenerator.cpp:776:  New kernel launched
+(57.255727) X86TraceGenerator.cpp:777:  compute version:2.0
+(57.255730) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(57.255734) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(57.255738) X86TraceGenerator.cpp:780:  number of warps per block:8
+(57.255740) X86TraceGenerator.cpp:781:  number of total warps:648
+(57.255744) X86TraceGenerator.cpp:782:  # threads per block : 256
+(57.255746) X86TraceGenerator.cpp:783:  number of register per thread:30
+(57.255749) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(57.255753) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(57.259828) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_24/ (status 0)
+
+(57.259869) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(58.939099) CudaRuntime.cpp:2609: cudaConfigureCall()
+(58.939160) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(58.939181) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(58.939199) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(58.939216) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(58.939233) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(58.939249) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(58.939265) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(58.939282) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(58.939298) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(58.939314) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(58.939331) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(58.939348) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(58.939363) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(58.939380) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(58.939460) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(58.939489) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(58.939511) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(58.939532) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(58.939552) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(58.939572) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(58.939591) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(58.939610) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(58.939629) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(58.939647) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(58.939666) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(58.939685) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(58.939942) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(58.939972) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(58.940014) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(58.940219) CudaRuntime.cpp:2706:  launch completed successfully
+(58.942069) X86TraceGenerator.cpp:776:  New kernel launched
+(58.942083) X86TraceGenerator.cpp:777:  compute version:2.0
+(58.942087) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(58.942090) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(58.942093) X86TraceGenerator.cpp:780:  number of warps per block:8
+(58.942096) X86TraceGenerator.cpp:781:  number of total warps:648
+(58.942099) X86TraceGenerator.cpp:782:  # threads per block : 256
+(58.942101) X86TraceGenerator.cpp:783:  number of register per thread:30
+(58.942104) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(58.942108) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(58.944608) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_25/ (status 0)
+
+(58.944632) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(60.535796) CudaRuntime.cpp:2609: cudaConfigureCall()
+(60.535811) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(60.535814) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(60.535817) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(60.535820) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(60.535823) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(60.535825) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(60.535828) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(60.535831) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(60.535833) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(60.535836) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(60.535839) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(60.535841) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(60.535844) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(60.535846) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(60.535864) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(60.535869) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(60.535873) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(60.535877) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(60.535881) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(60.535884) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(60.535888) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(60.535891) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(60.535895) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(60.535898) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(60.535901) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(60.535905) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(60.535909) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(60.535969) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(60.535974) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(60.536005) CudaRuntime.cpp:2706:  launch completed successfully
+(60.537439) X86TraceGenerator.cpp:776:  New kernel launched
+(60.537447) X86TraceGenerator.cpp:777:  compute version:2.0
+(60.537451) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(60.537454) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(60.537457) X86TraceGenerator.cpp:780:  number of warps per block:8
+(60.537460) X86TraceGenerator.cpp:781:  number of total warps:648
+(60.537462) X86TraceGenerator.cpp:782:  # threads per block : 256
+(60.537465) X86TraceGenerator.cpp:783:  number of register per thread:30
+(60.537467) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(60.537471) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(60.539820) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_26/ (status 0)
+
+(60.539862) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(62.015340) CudaRuntime.cpp:2609: cudaConfigureCall()
+(62.015360) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(62.015364) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(62.015368) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(62.015371) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(62.015375) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(62.015378) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(62.015381) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(62.015384) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(62.015387) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(62.015391) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(62.015394) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(62.015397) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(62.015400) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(62.015404) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(62.015429) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(62.015435) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(62.015440) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(62.015445) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(62.015449) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(62.015453) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(62.015458) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(62.015462) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(62.015466) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(62.015471) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(62.015475) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(62.015479) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(62.015483) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(62.015487) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(62.015591) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(62.015637) CudaRuntime.cpp:2706:  launch completed successfully
+(62.018304) X86TraceGenerator.cpp:776:  New kernel launched
+(62.018322) X86TraceGenerator.cpp:777:  compute version:2.0
+(62.018326) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(62.018329) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(62.018333) X86TraceGenerator.cpp:780:  number of warps per block:8
+(62.018335) X86TraceGenerator.cpp:781:  number of total warps:648
+(62.018338) X86TraceGenerator.cpp:782:  # threads per block : 256
+(62.018341) X86TraceGenerator.cpp:783:  number of register per thread:30
+(62.018344) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(62.018348) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(62.023543) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_27/ (status 0)
+
+(62.023603) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(63.471198) CudaRuntime.cpp:2609: cudaConfigureCall()
+(63.471220) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(63.471224) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(63.471230) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(63.471233) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(63.471236) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(63.471239) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(63.471241) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(63.471244) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(63.471247) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(63.471249) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(63.471252) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(63.471255) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(63.471257) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(63.471260) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(63.471282) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(63.471288) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(63.471292) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(63.471296) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(63.471300) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(63.471303) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(63.471307) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(63.471310) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(63.471314) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(63.471318) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(63.471321) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(63.471325) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(63.471328) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(63.471332) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(63.471335) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(63.471441) CudaRuntime.cpp:2706:  launch completed successfully
+(63.473577) X86TraceGenerator.cpp:776:  New kernel launched
+(63.473607) X86TraceGenerator.cpp:777:  compute version:2.0
+(63.473610) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(63.473615) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(63.473618) X86TraceGenerator.cpp:780:  number of warps per block:8
+(63.473621) X86TraceGenerator.cpp:781:  number of total warps:648
+(63.473624) X86TraceGenerator.cpp:782:  # threads per block : 256
+(63.473626) X86TraceGenerator.cpp:783:  number of register per thread:30
+(63.473629) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(63.473634) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(63.478491) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_28/ (status 0)
+
+(63.478516) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(64.960532) CudaRuntime.cpp:2609: cudaConfigureCall()
+(64.960547) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 0, size 4
+(64.960551) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 8, size 8
+(64.960554) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 16, size 8
+(64.960556) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 24, size 8
+(64.960559) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 32, size 4
+(64.960561) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 36, size 4
+(64.960564) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 40, size 4
+(64.960567) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 44, size 4
+(64.960569) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 48, size 4
+(64.960572) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 52, size 4
+(64.960574) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 56, size 4
+(64.960577) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 60, size 4
+(64.960580) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 64, size 4
+(64.960582) CudaRuntime.cpp:2631: cudaSetupArgument() - offset 68, size 4
+(64.960603) CudaRuntime.cpp:142:  Mapping parameter at offset 0 of size 4 to offset 0 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(64.960608) CudaRuntime.cpp:142:  Mapping parameter at offset 8 of size 8 to offset 8 of size 8
+   data = 0x00 0x46 0x66 0x00 0x00 0x00 0x00 0x00 
+(64.960611) CudaRuntime.cpp:142:  Mapping parameter at offset 16 of size 8 to offset 16 of size 8
+   data = 0x00 0xa9 0x65 0x00 0x00 0x00 0x00 0x00 
+(64.960615) CudaRuntime.cpp:142:  Mapping parameter at offset 24 of size 8 to offset 24 of size 8
+   data = 0x00 0x09 0x65 0x00 0x00 0x00 0x00 0x00 
+(64.960619) CudaRuntime.cpp:142:  Mapping parameter at offset 32 of size 4 to offset 32 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(64.960622) CudaRuntime.cpp:142:  Mapping parameter at offset 36 of size 4 to offset 36 of size 4
+   data = 0x64 0x00 0x00 0x00 
+(64.960626) CudaRuntime.cpp:142:  Mapping parameter at offset 40 of size 4 to offset 40 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(64.960629) CudaRuntime.cpp:142:  Mapping parameter at offset 44 of size 4 to offset 44 of size 4
+   data = 0x02 0x00 0x00 0x00 
+(64.960633) CudaRuntime.cpp:142:  Mapping parameter at offset 48 of size 4 to offset 48 of size 4
+   data = 0xa4 0xe7 0x3b 0x37 
+(64.960636) CudaRuntime.cpp:142:  Mapping parameter at offset 52 of size 4 to offset 52 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(64.960640) CudaRuntime.cpp:142:  Mapping parameter at offset 56 of size 4 to offset 56 of size 4
+   data = 0x00 0x00 0x20 0x41 
+(64.960643) CudaRuntime.cpp:142:  Mapping parameter at offset 60 of size 4 to offset 60 of size 4
+   data = 0x00 0x50 0x43 0x43 
+(64.960647) CudaRuntime.cpp:142:  Mapping parameter at offset 64 of size 4 to offset 64 of size 4
+   data = 0x5d 0x96 0x1c 0x34 
+(64.960650) CudaRuntime.cpp:142:  Mapping parameter at offset 68 of size 4 to offset 68 of size 4
+   data = 0x6f 0x12 0x83 0x3a 
+(64.960655) CudaRuntime.cpp:2685: kernel launch (_Z14calculate_tempiPfS_S_iiiiffffff) on thread 0x64e5e0
+(64.960696) CudaRuntime.cpp:2706:  launch completed successfully
+(64.962538) X86TraceGenerator.cpp:776:  New kernel launched
+(64.962588) X86TraceGenerator.cpp:777:  compute version:2.0
+(64.962593) X86TraceGenerator.cpp:778:  grid  9 x 9 x 1
+(64.962596) X86TraceGenerator.cpp:779:  block 16 x 16 x 1
+(64.962599) X86TraceGenerator.cpp:780:  number of warps per block:8
+(64.962602) X86TraceGenerator.cpp:781:  number of total warps:648
+(64.962605) X86TraceGenerator.cpp:782:  # threads per block : 256
+(64.962608) X86TraceGenerator.cpp:783:  number of register per thread:30
+(64.962611) X86TraceGenerator.cpp:784:  number of shared memory per thread:3072
+(64.962614) X86TraceGenerator.cpp:822:  max blocks per core : 4
+(64.964907) X86TraceGenerator.cpp:1082: mkdir -p /traces/_Z14calculate_tempiPfS_S_iiiiffffff_29/ (status 0)
+
+(64.964924) X86TraceGenerator.cpp:1083: errno is 0 message is Success
+
+(66.413718) CudaRuntime.cpp:1131: cudaMemcpy(0x644010, 0x650900, 40000)
+(66.413733) CudaRuntime.cpp:215:    _memcpy(0x644010, 0x650900, 40000 bytes) d-to-h
+(66.417318) CudaRuntime.cpp:887:  cudaFree(0x664600)
+(66.417336) CudaRuntime.cpp:887:  cudaFree(0x650900)
+(66.417340) CudaRuntime.cpp:887:  cudaFree(0x65a900)
+
+TEST PASSED
+(66.418301) X86TraceGenerator.cpp:725:  destructor
+(66.418457) X86TraceGenerator.cpp:2259: finalize
+(66.418463) X86TraceGenerator.cpp:2263: total instruction count: 922050

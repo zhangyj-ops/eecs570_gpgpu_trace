@@ -1,0 +1,14 @@
+newptx
+14
+-1
+/gpuocelot/tests/rodinia/tests/needlemanWunsch/trace/_Z20needle_cuda_shared_1PiS_S_iiii_0/Trace.txt
+/gpuocelot/tests/rodinia/tests/needlemanWunsch/trace/_Z20needle_cuda_shared_1PiS_S_iiii_1/Trace.txt
+/gpuocelot/tests/rodinia/tests/needlemanWunsch/trace/_Z20needle_cuda_shared_1PiS_S_iiii_2/Trace.txt
+/gpuocelot/tests/rodinia/tests/needlemanWunsch/trace/_Z20needle_cuda_shared_1PiS_S_iiii_3/Trace.txt
+/gpuocelot/tests/rodinia/tests/needlemanWunsch/trace/_Z20needle_cuda_shared_1PiS_S_iiii_4/Trace.txt
+/gpuocelot/tests/rodinia/tests/needlemanWunsch/trace/_Z20needle_cuda_shared_1PiS_S_iiii_5/Trace.txt
+/gpuocelot/tests/rodinia/tests/needlemanWunsch/trace/_Z20needle_cuda_shared_2PiS_S_iiii_0/Trace.txt
+/gpuocelot/tests/rodinia/tests/needlemanWunsch/trace/_Z20needle_cuda_shared_2PiS_S_iiii_1/Trace.txt
+/gpuocelot/tests/rodinia/tests/needlemanWunsch/trace/_Z20needle_cuda_shared_2PiS_S_iiii_2/Trace.txt
+/gpuocelot/tests/rodinia/tests/needlemanWunsch/trace/_Z20needle_cuda_shared_2PiS_S_iiii_3/Trace.txt
+/gpuocelot/tests/rodinia/tests/needlemanWunsch/trace/_Z20needle_cuda_shared_2PiS_S_iiii_4/Trace.txt

@@ -1,0 +1,32 @@
+root@6558f0d9a609:/gpuocelot/tests/rodinia/tests/hotspot# nvcc --cubin --ptxas-options=-v -arch sm_20 hotspot.cu
+ptxas info    : Compiling entry function '_Z14calculate_tempiPfS_S_iiiiffffff' for 'sm_20'
+ptxas info    : Function properties for _Z14calculate_tempiPfS_S_iiiiffffff
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 30 registers, 3072+0 bytes smem, 104 bytes cmem[0], 16 bytes cmem[16]
+
+root@6558f0d9a609:/gpuocelot/tests/rodinia/tests/hwt# nvcc --cubin --ptxas-options=-v -arch sm_20 main.cu
+ptxas info    : Compiling entry function '_Z6kernelv' for 'sm_20'
+ptxas info    : Function properties for _Z6kernelv
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 11872+0 bytes smem, 32 bytes cmem[0], 8696 bytes cmem[2], 16 bytes cmem[16]
+
+g++ -o hwt `OcelotConfig -l` -locelotTrace main.cu.cpp avilib.c avimod.c define.c 
+g++ -o hotspot -L/usr/local/cuda/lib64 -lcuda -lcudart `OcelotConfig -l` -locelotTrace hotspot.cu.cpp
+
+# generate kernel info
+nvcc --cubin --ptxas-options=-v -arch sm_20 main.cu 
+export TRACE_PATH="/gpuocelot/tests/rodinia/tests/hwt/trace"
+export KERNEL_INFO_PATH="kernel_info"
+export TRACE_PATH="/gpuocelot/tests/rodinia/tests/luDecomposition/trace"
+g++ -o lu -L/usr/local/cuda/lib64 -lcuda -lcudart `OcelotConfig -l` -locelotTrace common.c lud.cu.cpp lud_kernel.cu.cpp
+g++ -o hotspot `OcelotConfig -l` -locelotTrace hotspot.cu.cpp
+
+# Pattern
+nvcc --cubin --ptxas-options=-v -arch sm_20 *.cu 
+export TRACE_PATH="/gpuocelot/tests/rodinia/tests/hwt/trace"
+export KERNEL_INFO_PATH="kernel_info"
+vim kernel_info
+g++ -o lu `OcelotConfig -l` -locelotTrace *FILE_IN_MAKEFILEAM
+./lu -i INPUT_FILE
+
+g++ -o leukocyte `OcelotConfig -l` -locelotTrace detect_main.c avilib.c find_ellipse.c find_ellipse_kernel.cu.cpp track_ellipse.c track_ellipse_kernel.cu.cpp misc_math.c copy.c err.c matrixio.c memory.c vecop.c matop.c pxop.c submat.c init.c otherio.c machine.c matlab.c ivecop.c version.c meminfo.c memstat.c lufactor.c bkpfacto.c chfactor.c qrfactor.c solve.c hsehldr.c givens.c update.c norm.c hessen.c symmeig.c schur.c svd.c fft.c mfunc.c bdfactor.c sparse.c sprow.c sparseio.c spchfctr.c splufctr.c spbkp.c spswap.c iter0.c itersym.c iternsym.c zmachine.c zcopy.c zmatio.c zmemory.c zvecop.c zmatop.c znorm.c zfunc.c zlufctr.c zsolve.c zmatlab.c zhsehldr.c zqrfctr.c zgivens.c zhessen.c zschur.c 
